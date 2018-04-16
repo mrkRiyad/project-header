@@ -1,0 +1,119 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Project Header CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+#ph-container {
+    margin: 0;
+    padding: 0;
+    background: #24292e;
+    position: relative;
+    font-family: sans-serif;
+    box-shadow: 0 4px 24px #333;
+}
+#ph-container:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+#ph-container .ph-struc {
+    width: 95%;
+    margin: 0 auto;
+}
+#ph-container .ph-logo {
+    width: 30%;
+    float: left;
+}
+#ph-container .ph-logo a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 12px 20px;
+    display: inline-block;
+    background: #353B44;
+}
+#ph-container .ph-logo a i {
+    padding-right: 5px;
+}
+#ph-container .ph-menu {
+    width: 70%;
+    float: right;
+}
+#ph-container .ph-menu > a {
+    display: inline-block;
+    color: #ddd;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 12.5px 18px;
+    -webkit-transition: 0.6s ease all;
+    -moz-transition: 0.6s ease all;
+    -ms-transition: 0.6s ease all;
+    transition: 0.6s ease all;
+    background: #383D45;
+    border: 1px solid #454545;
+    box-shadow: 0 0px 10px #454545 inset;
+}
+#ph-container .ph-menu > a:hover {
+    background: #353B44;
+    color: #fff;
+}
+#ph-container .ph-menu-slide {
+    position: absolute;
+    background: #353B44;
+    top: 45px;
+    right: 0;
+    height: calc(100vh - 75px);
+    width: 300px;
+    padding: 20px 10px 10px 20px;
+    overflow: auto;
+    /* box-shadow: -8px 10px 26px #666; */
+    box-shadow: -4px 0 24px #333;
+    -webkit-transition: 0.6s ease all;
+    -moz-transition: 0.6s ease all;
+    -ms-transition: 0.6s ease all;
+    transition: 0.6s ease all;
+    opacity: 0;
+}
+#ph-container .menu-show {
+    opacity: 1;
+}
+#ph-container .ph-menu-slide h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px dashed #999;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#ph-container .ph-menu-slide ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#ph-container .ph-menu-slide ul li {
+    border-bottom: 1px dashed #999;
+}
+#ph-container .ph-menu-slide ul li a {
+    color: #aaa;
+    text-decoration: none;
+    line-height: 22px;
+    display: block;
+    padding: 8px 2px;
+    padding-right: 10px;
+    -webkit-transition: 0.6s ease all;
+    -moz-transition: 0.6s ease all;
+    -ms-transition: 0.6s ease all;
+    transition: 0.6s ease all;
+}
+#ph-container .ph-menu-slide ul li a:hover {
+    margin-left: 10px;
+    padding-right: 0;
+    color: #fff;
+}
