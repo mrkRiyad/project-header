@@ -4,11 +4,29 @@
 
 
 // Project Header JS
-$(document).ready(function() {
-    $('#menu-btn').click(function() {
+$(document).ready(function () {
+    $('#menu-btn').click(function () {
         $('#menu-body').toggleClass("menu-show");
     });
 });
 
 
+var container = $('#ph-container');
+var menu = $('menu-body');
 
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function () {
+    if(this.readyState == 4 && this.status == 200) {
+        retriveData(this);
+    }
+}
+xmlhttp.open('GET', 'https://raw.githubusercontent.com/mrkRiyad/project-header/master/data.json', true);
+xmlhttp.send();
+
+function retriveData(xml) {
+    console.log(xml.response);
+    var data = JSON.parse(xml.response);
+    console.log(data);
+    
+}
