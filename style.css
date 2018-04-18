@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 #ph-container .ph-logo {
-    width: 30%;
+    width: 80%;
     float: left;
 }
 #ph-container .ph-logo a {
@@ -40,7 +40,7 @@
     padding-right: 5px;
 }
 #ph-container .ph-menu {
-    width: 70%;
+    width: 20%;
     float: right;
 }
 #ph-container .ph-menu > a {
