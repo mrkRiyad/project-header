@@ -10,6 +10,7 @@ body {
     font-family: sans-serif;
     box-shadow: 0 4px 24px #333;
     width: 100%;
+    z-index: 999999999999;
 }
 #ph-container:after {
     content: '';
