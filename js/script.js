@@ -4,39 +4,37 @@
 
 
 // Project Header JS
-$(document).ready(function () {
-    $('#menu-btn').click(function () {
-        $('#menu-body').toggleClass("menu-show");
-        return false;
-    });
-    $('<div class="ph-layer"></div>').insertAfter('#ph-container');
-});
-
+function btnClick() {
+    $('#menu-body').toggleClass("menu-show");
+}
 
 var container = document.getElementById('ph-container');
-var menu = $('menu-body');
-
 var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function () {
-    if(this.readyState == 4 && this.status == 200) {
-        retriveData(this);
-    }
+        
+        if(this.readyState == 4 && this.status == 200) {
+            retriveData(this);
+        } else {
+            console.log('Server connected but return an error.');
+        }
 }
-xmlhttp.open('GET', 'https://raw.githubusercontent.com/mrkRiyad/project-header/master/data.json', true);
+xmlhttp.onerror = function () {
+    console.log('Connection Error.');
+}
+xmlhttp.open('GET', 'https://raw.githack.com/mrkRiyad/project-header/master/data.json', true);
 xmlhttp.send();
 
 function retriveData(xml) {
+    
     var content = '';
     var data = JSON.parse(xml.response);
 
-    content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><a id="menu-btn" href=""><i class="fa fa-bars"></i></a></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
+    content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><span id="ph-menu-btn" onclick="btnClick();"><i class="fa fa-bars"></i></span></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
 
     for (var i = 0; i < data.length; i++) {
         content += '<li><a href="' + data[i].url +'" target="_blank">'+ data[i].name +'</a></li>'; 
     }
-
     content += '</ul></div >';    
     container.innerHTML = content;
-
 }
