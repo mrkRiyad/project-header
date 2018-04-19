@@ -49,11 +49,7 @@ body {
     width: 20%;
     float: right;
 }
-<<<<<<< HEAD
 #ph-container .ph-menu > span#ph-menu-btn {
-=======
-#ph-container .ph-menu > span {
->>>>>>> 94d1c01b78b42b25f540702235dc027e8aa31775
     display: inline-block;
     color: #ddd;
     float: right;
@@ -70,11 +66,7 @@ body {
     box-shadow: 0 0px 10px #454545 inset;
     cursor: pointer;
 }
-<<<<<<< HEAD
 #ph-container .ph-menu > span#ph-menu-btn:hover {
-=======
-#ph-container .ph-menu > span:hover {
->>>>>>> 94d1c01b78b42b25f540702235dc027e8aa31775
     background: #353B44;
     color: #fff;
 }
