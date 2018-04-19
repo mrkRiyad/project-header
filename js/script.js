@@ -29,7 +29,7 @@ function retriveData(xml) {
     var content = '';
     var data = JSON.parse(xml.response);
 
-    content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><span id="menu-btn" href=""><i class="fa fa-bars"></i></span></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
+    content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><span id="menu-btn"><i class="fa fa-bars"></i></span></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
 
     for (var i = 0; i < data.length; i++) {
         content += '<li><a href="' + data[i].url +'" target="_blank">'+ data[i].name +'</a></li>'; 
