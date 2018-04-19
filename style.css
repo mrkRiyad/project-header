@@ -47,7 +47,7 @@ body {
     width: 20%;
     float: right;
 }
-#ph-container .ph-menu > a {
+#ph-container .ph-menu > span {
     display: inline-block;
     color: #ddd;
     float: right;
@@ -63,7 +63,7 @@ body {
     border: 1px solid #454545;
     box-shadow: 0 0px 10px #454545 inset;
 }
-#ph-container .ph-menu > a:hover {
+#ph-container .ph-menu > span:hover {
     background: #353B44;
     color: #fff;
 }
