@@ -4,19 +4,9 @@
 
 
 // Project Header JS
-<<<<<<< HEAD
 function btnClick() {
     $('#menu-body').toggleClass("menu-show");
 }
-=======
-$(document).ready(function () {
-    $('#menu-btn').click(function () {
-        $('#menu-body').toggleClass("menu-show");
-    });
-    $('<div class="ph-layer"></div>').insertAfter('#ph-container');
-});
-
->>>>>>> 94d1c01b78b42b25f540702235dc027e8aa31775
 
 var container = document.getElementById('ph-container');
 var xmlhttp = new XMLHttpRequest();
@@ -40,20 +30,11 @@ function retriveData(xml) {
     var content = '';
     var data = JSON.parse(xml.response);
 
-<<<<<<< HEAD
     content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><span id="ph-menu-btn" onclick="btnClick();"><i class="fa fa-bars"></i></span></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
-=======
-    content += '<div class="ph-struc"><div class="ph-logo" ><a href="https://github.com/mrkRiyad/"><i class="fa fa-github"></i>Riyad Khan</a></div><div class="ph-menu"><span id="menu-btn"><i class="fa fa-bars"></i></span></div></div><div id="menu-body" class="ph-menu-slide"><h3>All Projects</h3><ul>';
->>>>>>> 94d1c01b78b42b25f540702235dc027e8aa31775
 
     for (var i = 0; i < data.length; i++) {
         content += '<li><a href="' + data[i].url +'" target="_blank">'+ data[i].name +'</a></li>'; 
     }
     content += '</ul></div >';    
     container.innerHTML = content;
-<<<<<<< HEAD
 }
-=======
-
-}
->>>>>>> 94d1c01b78b42b25f540702235dc027e8aa31775
