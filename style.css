@@ -36,14 +36,18 @@ body {
     color: #ddd;
     text-decoration: none;
     font-size: 18px;
+    line-height: 27px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 12px 20px;
+    padding: 8px 20px;
     display: inline-block;
     background: #353B44;
+    vertical-align: middle;
 }
 #ph-container .ph-logo a i {
     padding-right: 5px;
+    font-size: 30px;
+    vertical-align: middle;
 }
 #ph-container .ph-menu {
     width: 20%;
@@ -56,6 +60,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 19px;
     padding: 12.5px 18px;
     -webkit-transition: 0.6s ease all;
     -moz-transition: 0.6s ease all;
